@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz SOBRE A MARINA</title>
+        <meta name="description" content="Um quiz interativo para testar seus conhecimentos sobre a Marina!">
+        <head>
+    <title>Quiz SOBRE A MARINA</title>
+    <meta name="description" content="Um quiz interativo para testar seus conhecimentos sobre a Marina!">
+
+    <!-- Importando fontes do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        /* Fonte geral */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fffdfd; /* corzinha de fundo clara */
+            color: #222; /* texto escuro */
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        /* Cabeçalho principal */
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5em;
+            color: #d63384; /* rosa forte */
+            text-align: center;
+        }
+
+        /* Subtítulos (perguntas) */
+        h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.5em;
+            color: #5a189a; /* roxo */
+        }
+
+        /* Parágrafos */
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1em;
+        }
+
+        /* Tabelas */
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px auto;
+        }
+        table, th, td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: center;
+        }
+        thead {
+            background-color: #d63384;
+            color: white;
+        }
+        tfoot {
+            background-color: #f1f1f1;
+            font-style: italic;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        a {
+            color: #d63384;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+    </head>
+    <body>
+        <!--CABEÇALHO-->
+        <header>
+            <h1>Quiz inteirativo sobre a Marina</h1>
+            <p>Teste seus conhecimentos sobre ela e veja quantos pontos vc consegue!</p>
+        </header>
+        <main>
+            <!--INTRODUÇÃO-->
+            <section>
+                <h2>Sobre esse quiz:</h2>
+                <p>oi<br>Esse quiz foi criado para testar seus conhecimentos sobre <abbr title="A MARINA MAI">ela.</abbr></p>
+                <p><strong>Os de verdades eu saberei quem são!</strong></p>
+                <p><em>Beijos</em></p>
+            </section>
+            <!--PERGUNTA 1 MÚLTIPLA ESCOLHA-->
+            <section>
+                <h2>PERGUNTA 1: Qual é o signo dela?</h2>
+                <!--opção de marcar a bolinha-->
+                <form>
+                    <input type="radio" value="touro" id="p1a" name="pergunta1">
+                    <label for="p1a">touro</label><br>
+                    <input type="radio" value="gêmeos" id="p1b" name="pergunta1">
+                    <label for="p1a">gêmeos</label><br>
+                    <input type="radio" value="peixes" id="p1c" name="pergunta1">
+                    <label for="p1a">peixes</label><br>
+                    <input type="radio" value="libra" id="p1d" name="pergunta1">
+                    <label for="p1a">libra</label><br>
+                    <input type="radio" value="escorpião" id="p1e" name="pergunta1">
+                    <label for="p1a">escorpião</label><br>
+                </form>
+            </section>
+            <!--PERGUNTA 2 DISCURSIVA -->
+            <section>
+                <h2>PERGUNTA 2: "A Marina tem __ gatos"</h2>
+                <form>
+                    <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta aqui :D">
+                </form>
+            </section>
+            <!--PERGUNTA 3 SENHA -->
+            <section>
+                <h2>PERGUNTA 3: Dê uma sugestão de senha para ela.</h2>
+                <form> 
+                    <input type="password" id="p3" name="pergunta3" placeholder="digite uma senha">
+                </form>
+            </section>
+            <!--PERGUNTA 4: DATA/CALENDÁRIO -->
+            <section>
+                <h2>PERGUNTA 4: Qual é a data de nascimento dela?</h2>
+                <form>
+                    <input type="date" id="p4" name="pergunta4">
+                </form>
+            </section>
+            <!--PERGUNTA 5: MULTIPLA ESCOLHA-->
+            <section>
+            <h2>PERGUNTA 5: Quais são as cores favoritas da Marina?</h2>
+            <form>
+                <input type="checkbox" id="p5" name="pergunta5" value="rosa">
+                <label for="p5a">rosa</label><br>
+                <input type="checkbox" id="p5" name="pergunta5" value="verde">
+                <label for="p5b">verde</label><br>
+                <input type="checkbox" id="p5" name="pergunta5" value="preto">
+                <label for="p5c">preto</label><br>
+                <input type="checkbox" id="p5" name="pergunta5" value="roxo">
+                <label for="p5d">roxo</label><br>
+                <input type="checkbox" id="p5" name="pergunta5" value="azul">
+                <label for="p5e">azul</label><br>
+            </form>
+            </section>
+            <!--PERGUNTA 6: ANEXADOR DE ARQUIVO-->
+            <section>
+                <h2>PERGUNTA 7: não sei rs</h2>
+                <form>
+                    <input type="file" id="p6" name="pergunta6">
+                </form>
+            </section>
+            <!--PERGUNTA 7: MENU SUSPENSO-->
+            <section>
+                <h1>PERGUNTA 7: Selecione a fruta preferida dela</h1>
+                <form>
+                    <select name="pergunta7" id="p7">
+                        <option value="laranja">laranja</option>
+                        <option value="maçã">maçã</option>
+                        <option value="melancia">melancia</option>
+                        <option value="melão">melão</option>
+                        <option value="mexereca">mexereca</option>
+                    </select>
+                </form>
+            </section>
+            <!--PERGUNTA 8: IMAGEM-->
+            <section>
+                <h2>PERGUNTA 8: Qual gato é esse?</h2>
+                <figure>
+                    <img src="https://media.discordapp.net/attachments/949809707504255050/1416961906018619412/CCB41D1A-AECD-4065-9A99-DA4F1B3C4D34.jpg?ex=68c8c01c&is=68c76e9c&hm=c0dd4c28e15524027455e922673a5851bfe3365d57d73a3096b8598ad9bf0ee2&=&format=webp&width=1334&height=750" 
+                    alt="um gato tigrão">
+                    <figcaption>Figura 1: gato lindo</figcaption>
+                </figure>
+                <input type="text" id="p8" name="pergunta8" placeholder="nome do gato aqui!">
+            </section>
+            <!--TABELA-->
+            <section>
+                <h2>Tabela de Pontuação</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>PONTUAÇÃO</th>
+                            <th>AVALIAÇÃO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0-2</td>
+                            <td>Melhore!
+                        </tr>
+                        <tr>
+                            <td>3-4</td>
+                            <td>Melhore!
+                        </tr>
+                        <tr>
+                            <td>5-7</td>
+                            <td>Está quase arrasando!
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>ARRASOU!
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <!--COMO OCULPAR MAIS COLUNAS-->
+                            <td colspan="2">Boa sorte na próxima!</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <!--LISTA DE RESPOSTAS-->
+            <section>
+                <h2>Verifique suas respostas:</h2>
+                <!--pode usar UL também, mas ai vira em pontinho e não em pontuações-->
+                <details><!--para ocultar a lista-->
+                    <summary>Clique aqui para ver as respostas do quiz</summary>
+                    <ol>
+                        <li>peixes</li>
+                        <li>4</li>
+                        <li>2433E0ASODJMOAE</li>
+                        <li>19/03/2005</li>
+                        <li>rosa, verde e preto</li>
+                        <li>?</li>
+                        <li>melancia</li>
+                        <li>Hiro</li>
+                    </ol>
+                </details>
+            </section>
+            <!--Formulário de feedback-->
+            <section>
+                <h2>feedback do quiz</h2>
+                <form>
+                    <fieldset><!--botar uma borda nos proximos textos-->
+                        <legend>Informações de Contato</legend>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="coments">Comentários:</label><br>
+                        <textarea name="coments" id="coments" rows="4" cols="50" placeholder="Digite seus comentários aqui"></textarea>
+                    </fieldset>
+                </form>
+            
+            </section>
+        </main>
+        <footer>
+            <p>&copy Quiz da Marina. Todos os direitos reservados.</p>
+            <!--ABRIR LINK-->
+            <p><a href="image0.jpg" target="_blank">Clique aqui </a></p>
+        </footer>
+    </body>
+</html>
